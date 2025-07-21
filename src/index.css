@@ -17,4 +17,8 @@ body {
   justify-content: center;
   min-height: 100vh;
   background: url(/bg.jpg) #030728 no-repeat center;
+
+  @media (max-width: 500px) {
+    padding: 0 10px 0 10px;
+  }
 }
