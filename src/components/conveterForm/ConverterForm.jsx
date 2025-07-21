@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./converterForm.scss";
 import CurrencySelect from "../currencySelect/CurrencySelect";
 
 const ConverterForm = () => {

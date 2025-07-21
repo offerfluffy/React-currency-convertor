@@ -1,0 +1,27 @@
+.currency-select {
+  display: flex;
+  padding: 0 10px;
+  min-height: 45px;
+  align-items: center;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  img {
+    width: 25px;
+  }
+
+  .currency-dropdown {
+    outline: none;
+    border: none;
+    background: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 0 10px 0 5px;
+
+    option {
+      color: #000;
+      font-weight: 500;
+    }
+  }
+}

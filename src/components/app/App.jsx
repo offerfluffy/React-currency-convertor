@@ -1,4 +1,5 @@
-import ConverterForm from "./components/conveterForm/ConverterForm";
+import ConverterForm from "../conveterForm/ConverterForm";
+import "./app.scss";
 
 const App = () => {
   return (
