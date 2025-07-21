@@ -1,3 +1,5 @@
+import { Field } from "formik";
+
 import "./currencySelect.scss";
 
 const currencyCodes = [
@@ -164,23 +166,25 @@ const currencyCodes = [
   "ZWL",
 ];
 
-const CurrencySelect = ({ selectedCurrency, handleCurrency }) => {
-  const countryCode = selectedCurrency.substring(0, 2);
+const CurrencySelect = ({ name, value, onChange }) => {
+  const countryCode = value.substring(0, 2);
 
   return (
     <div className="currency-select">
       <img src={`https://flagsapi.com/${countryCode}/flat/64.png`} alt="Flag" />
-      <select
+      <Field
+        as="select"
+        name={name}
+        value={value}
         className="currency-dropdown"
-        value={selectedCurrency}
-        onChange={handleCurrency}
+        onChange={onChange}
       >
         {currencyCodes.map((code) => (
           <option key={code} value={code}>
             {code}
           </option>
         ))}
-      </select>
+      </Field>
     </div>
   );
 };
