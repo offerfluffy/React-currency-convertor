@@ -23,6 +23,12 @@
       background-color: rgb(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.5);
     }
+
+    .error {
+      color: rgba(255, 0, 0, 0.584);
+      font-size: 1rem;
+      margin-top: 5px;
+    }
   }
 
   .form__group_currency {

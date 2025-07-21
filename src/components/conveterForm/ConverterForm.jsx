@@ -69,7 +69,7 @@ const ConverterForm = () => {
                 className="form__input"
                 value={amount}
               />
-              <ErrorMessage name="amount" />
+              <ErrorMessage name="amount" component="div" className="error" />
             </div>
             <div className="form__group form__group_currency">
               <div className="form__section">
@@ -80,6 +80,11 @@ const ConverterForm = () => {
                   onChange={(e) =>
                     setFieldValue("fromCurrency", e.target.value)
                   }
+                />
+                <ErrorMessage
+                  name="fromCurrency"
+                  component="div"
+                  className="error"
                 />
               </div>
 
@@ -109,6 +114,11 @@ const ConverterForm = () => {
                   name="toCurrency"
                   value={toCurrency}
                   onChange={(e) => setFieldValue("toCurrency", e.target.value)}
+                />
+                <ErrorMessage
+                  name="toCurrency"
+                  component="div"
+                  className="error"
                 />
               </div>
             </div>
